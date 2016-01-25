@@ -1,0 +1,36 @@
+<html ng-app="srvFacPrvApp">
+    <!--ng-app="ourApp"-->
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="customStyle.css"/>
+        
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.min.js"></script>
+        
+        <script src="srv-fac-prv.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <div class="panel-body">
+                  <div ng-controller="mainCtrl">
+                      Name from Service is: {{name}}
+                   </div>
+                
+                <div ng-controller="mainFacCtrl">
+                      Name from Factory is: {{name}}
+                   </div>
+                
+                <div ng-controller="mainPrvCtrl">
+                      Name from Provider is: {{name}}
+                   </div>
+                </div>
+            
+        </div>    
+    </body>
+</html>
